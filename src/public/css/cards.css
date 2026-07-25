@@ -24,6 +24,7 @@
     box-shadow: var(--shadow-small);
 
     transition: var(--transition-normal);
+    max-width:500px;
 
 }
 
@@ -46,6 +47,7 @@
 .card-header{
 
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
 
 }
 
@@ -91,9 +93,15 @@
 
     margin-top: 25px;
 
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border-color);
+
     display: flex;
 
     justify-content: flex-end;
+
+    align-items: center;
 
     gap: 12px;
 

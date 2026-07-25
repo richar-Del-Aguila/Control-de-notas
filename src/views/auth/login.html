@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/Control-de-notas/src/public/css/components.css">
 </head>
+
 <body>
-    
+    <main>
+        <section class="card">
+            <header class="card-header" style="text-align: center;">
+                <h2>Inicio de seción</h2>
+                <p>Ingresa los siguientes daots para inicar seción</p>
+            </header>
+            <form class="form-field">
+                <div>
+                    <label for="usuarioIngresado" class="form-label">Usuario</label>
+                    <input 
+                    type="text"
+                    placeholder="Ingresa tu usuario" 
+                    class="form-input" 
+                    id="usuarioIngresado"
+                    name="user"
+                    required>
+                </div>
+                <div>
+                    <label for="contrasenaIngresada" class="form-label">Contraseña</label>
+                    <input
+                    id="contrasenaIngresada"
+                    type="password"
+                    name="password"
+                    placeholder="Ingresa tu contraseña"
+                    class="form-input"
+                    required>
+                </div>
+                <div class="form-actions">
+                    <button
+                    id="btnIngresar" 
+                    class="btn btn-primary" 
+                    type="submit"
+                    disabled>Ingresar</button>
+                </div>
+            </form>
+            <footer class="card-footer">
+                <p>¿No tienes acceso?</p>
+                <button class="btn btn-secondary">Solicitar usuario</button>
+            </footer>
+        </section>
+    </main>
+    <script type="module" src="/Control-de-notas/src/public/js/auth/login.js"></script>
 </body>
+
 </html>

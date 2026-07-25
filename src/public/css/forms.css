@@ -38,6 +38,7 @@
 .form-label{
 
     color:var(--text-color);
+    
 
     font-weight:var(--font-weight-semibold);
 
@@ -392,4 +393,9 @@
 
     transform:rotate(45deg);
 
+}
+
+.form-actions{
+    display:flex;
+    justify-content:center;
 }
