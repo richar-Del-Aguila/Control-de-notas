@@ -1,10 +1,13 @@
-const express = require('express');
+import 'dotenv/config';
+import express from 'express';
+
 const app = express();
+const PUERTO = process.env.PUERTO;
 
 app.get('/', (req, res) => {
-  res.send('Servidor levantado correctamente');
+  res.send('Hola mundo');
 });
 
-app.listen(3000, () => {
-  console.log('Servidor en http://localhost:3000');
+app.listen(PUERTO, () => {
+  console.log(`Servidor en http://localhost:${PUERTO}`);
 });

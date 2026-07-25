@@ -1,0 +1,130 @@
+/* ==========================================================
+   ALERTAS DEL SISTEMA
+   ----------------------------------------------------------
+   Este archivo contiene los estilos para mostrar mensajes
+   informativos al usuario.
+
+   Tipos disponibles:
+
+   - alert-info
+   - alert-success
+   - alert-warning
+   - alert-danger
+
+========================================================== */
+
+@import url("/Control-de-notas/src/public/css/variables.css");
+/* ==========================================================
+   ALERTA BASE
+========================================================== */
+
+.alert{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border-radius:var(--radius-medium);
+
+    border:2px solid;
+
+    font-size:var(--font-size-normal);
+
+    line-height:1.5;
+
+}
+
+
+/* ==========================================================
+   CONTENIDO
+========================================================== */
+
+.alert-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+
+.alert-title{
+
+    font-weight:var(--font-weight-bold);
+
+}
+
+
+.alert-message{
+
+    color:inherit;
+
+}
+
+
+/* ==========================================================
+   INFORMACIÓN
+========================================================== */
+
+.alert-info{
+
+    background:var(--info-soft);
+
+    border-color:var(--info-color);
+
+    color:var(--info-color);
+
+}
+
+
+/* ==========================================================
+   ÉXITO
+========================================================== */
+
+.alert-success{
+
+    background:var(--success-soft);
+
+    border-color:var(--success-color);
+
+    color:var(--success-color);
+
+}
+
+
+/* ==========================================================
+   ADVERTENCIA
+========================================================== */
+
+.alert-warning{
+
+    background:var(--warning-soft);
+
+    border-color:var(--warning-color);
+
+    color:var(--warning-color);
+
+}
+
+
+/* ==========================================================
+   ERROR
+========================================================== */
+
+.alert-danger{
+
+    background:var(--danger-soft);
+
+    border-color:var(--danger-color);
+
+    color:var(--danger-color);
+
+}

@@ -1,0 +1,182 @@
+/* ==========================================================
+   BOTONES DEL SISTEMA
+   ----------------------------------------------------------
+   Este archivo contiene todos los estilos reutilizables para
+   botones.
+
+   Variantes disponibles:
+
+   - btn-primary
+   - btn-secondary
+   - btn-danger
+
+   Todos comparten la clase base ".btn".
+========================================================== */
+
+@import url("/Control-de-notas/src/public/css/variables.css");
+/* =========================
+   BOTÓN BASE
+========================= */
+
+.btn{
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    border: 2px solid transparent;
+
+    border-radius: var(--radius-medium);
+
+    cursor: pointer;
+
+    font-family: var(--font-family);
+
+    font-size: var(--font-size-normal);
+
+    font-weight: var(--font-weight-semibold);
+
+    transition: var(--transition-normal);
+
+    user-select: none;
+
+}
+
+
+/* =========================
+   BOTÓN PRIMARIO
+========================= */
+
+.btn-primary{
+
+    background: var(--primary-color);
+
+    border-color: var(--primary-color);
+
+    color: var(--text-light);
+
+}
+
+.btn-primary:hover:not(:disabled){
+
+    background: var(--primary-hover);
+
+    border-color: var(--primary-hover);
+
+}
+
+.btn-primary:active{
+
+    transform: scale(.98);
+
+}
+
+
+/* =========================
+   BOTÓN SECUNDARIO
+========================= */
+
+.btn-secondary{
+
+    background: var(--card-color);
+
+    color: var(--text-color);
+
+    border-color: var(--border-dark);
+
+}
+
+.btn-secondary:hover:not(:disabled){
+
+    background: var(--background-color);
+
+}
+
+
+/* =========================
+   BOTÓN DANGER
+========================= */
+
+.btn-danger{
+
+    background: var(--danger-color);
+
+    border-color: var(--danger-color);
+
+    color: var(--text-light);
+
+}
+
+.btn-danger:hover:not(:disabled){
+
+    background: var(--danger-hover);
+
+    border-color: var(--danger-hover);
+
+}
+
+.btn-danger:active{
+
+    transform: scale(.98);
+
+}
+
+
+/* =========================
+   BOTÓN DESHABILITADO
+========================= */
+
+.btn:disabled{
+
+    background: var(--disabled-background);
+
+    border-color: var(--disabled-background);
+
+    color: var(--text-disabled);
+
+    cursor: not-allowed;
+
+    opacity: .8;
+
+}
+
+
+/* =========================
+   MODIFICADORES
+========================= */
+
+/* Ocupa todo el ancho */
+
+.btn-full{
+
+    width: 100%;
+
+}
+
+
+/* Tamaño pequeño */
+
+.btn-small{
+
+    padding: 8px 16px;
+
+    font-size: var(--font-size-small);
+
+}
+
+
+/* Tamaño grande */
+
+.btn-large{
+
+    padding: 16px 30px;
+
+    font-size: var(--font-size-large);
+
+}

@@ -1,0 +1,210 @@
+/* ==========================================================
+   ESTILOS BASE DEL PROYECTO
+   ----------------------------------------------------------
+   Este archivo contiene los estilos generales que utilizará
+   toda la aplicación.
+========================================================== */
+
+@import url("/Control-de-notas/src/public/css/variables.css");
+/* =========================
+   RESETEO GENERAL
+========================= */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   HTML
+========================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family: var(--font-family);
+
+    color: var(--text-color);
+
+    background: var(--background-color);
+
+    font-size: var(--font-size-normal);
+
+    line-height: 1.5;
+
+    min-height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
+/* =========================
+   ENCABEZADOS
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color: var(--text-color);
+
+    font-weight: var(--font-weight-bold);
+
+    line-height: 1.2;
+
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+p{
+
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   ENLACES
+========================= */
+
+a{
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+
+}
+
+a:hover{
+
+    color: var(--primary-hover);
+
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+ul,
+ol{
+
+    list-style: none;
+
+}
+
+
+/* =========================
+   IMÁGENES
+========================= */
+
+img{
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+button,
+input,
+textarea,
+select{
+
+    font: inherit;
+
+}
+
+
+/* =========================
+   TABLAS
+========================= */
+
+table{
+
+    border-collapse: collapse;
+
+    width: 100%;
+
+}
+
+
+/* =========================
+   UTILIDADES GENERALES
+========================= */
+
+.hidden{
+
+    display: none !important;
+
+}
+
+.text-center{
+
+    text-align: center;
+
+}
+
+.text-right{
+
+    text-align: right;
+
+}
+
+.text-left{
+
+    text-align: left;
+
+}
+
+.full-width{
+
+    width: 100%;
+
+}
+
+.cursor-pointer{
+
+    cursor: pointer;
+
+}

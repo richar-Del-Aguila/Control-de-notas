@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Control-de-notas/src/public/css/variables.css">
+    <link rel="stylesheet" href="/Control-de-notas/src/public/css/pages/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+		<main id="register-container">
+			<section id="register-card">
+				<header>
+					<span class="app-name">Control de notas</span>
+					<h1>Crear usuario</h1>
+					<p>Completa los datos para registrar un nuevo usuario.</p>
+				</header>
+				<form action="">
+					<div>
+						<label for="nombreUsuario">Usuario</label>
+						<input
+							id="nombreUsuario"
+							type="text" 
+							name = "user"
+							placeholder="Nombre de usuario"
+							autocomplete="username"
+							required>
+					</div>
+					<div>
+						<label for="correoUsuario">Correo electronico</label>
+						<input
+							id="correoUsuario"
+							placeholder="Correo del usuario"
+							required
+							name="correo"
+							type="email">
+					</div>
+						<div>
+							<fieldset>
+								<legend>Rol de usuario</legend>
+									<label for="admin">
+										<input id="admin" type="radio" name="rol" value="admin" required>
+										Administrador
+									</label>
+								<label for="profesor">
+									<input id="profesor" type="radio" name="rol" value="profesor" required>
+									Profesor
+								</label>
+								<label for="estudiante">
+									<input id="estudiante" type="radio" name="rol" value="estudiante" required>
+									Estudiante
+								</label>
+							</fieldset>
+					</div>
+					<div>
+						<label for="contraUsuario">Contraseña</label>
+						<input
+							placeholder="Contraseña del usuario"
+							autocomplete="new-password"
+							name="password"
+							required
+							id="contraUsuario"
+							type="password">
+					</div>
+					<div>
+						<button type="submit">Crear usuario</button>
+					</div>
+				</form>
+			</section>
+		</main>
+    <script src="./script.js"></script>
+  </body>
+</html>

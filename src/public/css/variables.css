@@ -1,0 +1,119 @@
+/* ==========================================================
+   VARIABLES GLOBALES DEL SISTEMA
+   ----------------------------------------------------------
+   Este archivo contiene la identidad visual del proyecto:
+
+   - Colores principales
+   - Colores de estados
+   - Fondos
+   - Colores de texto
+   - Bordes
+   - Tipografía
+   - Sombras
+   - Bordes redondeados
+   - Transiciones
+========================================================== */
+
+:root {
+
+  /* =========================
+     COLORES PRINCIPALES
+  ========================= */
+
+  --primary-color: #24b4fb;
+  --primary-hover: #0071e2;
+  --primary-soft: #e8f7ff;
+
+
+  /* =========================
+     COLORES DE ESTADO
+  ========================= */
+
+  --danger-color: #dc3545;
+  --danger-hover: #bb2d3b;
+  --danger-soft: #fff0f1;
+
+  --success-color: #218c5b;
+  --success-hover: #176f47;
+  --success-soft: #eaf8f1;
+
+  --warning-color: #d89000;
+  --warning-hover: #b67600;
+  --warning-soft: #fff8df;
+
+  --info-color: #2a82b7;
+  --info-soft: #e9f7ff;
+
+
+  /* =========================
+     FONDOS
+  ========================= */
+
+  --background-color: #eef7fc;
+  --card-color: #ffffff;
+  --input-background: #fbfdff;
+  --disabled-background: #dce8ee;
+
+
+  /* =========================
+     TEXTO
+  ========================= */
+
+  --text-color: #17324d;
+  --text-secondary: #5f7285;
+  --text-placeholder: #91a4b3;
+  --text-disabled: #7f96a5;
+  --text-light: #ffffff;
+
+
+  /* =========================
+     BORDES
+  ========================= */
+
+  --border-color: #d8e5ed;
+  --border-hover: #7fb7d4;
+  --border-dark: #1f2937;
+
+
+  /* =========================
+     TIPOGRAFÍA
+  ========================= */
+
+  --font-family: Arial, Helvetica, sans-serif;
+
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* =========================
+     BORDES REDONDEADOS
+  ========================= */
+
+  --radius-small: 6px;
+  --radius-medium: 12px;
+  --radius-large: 18px;
+  --radius-round: 50%;
+
+
+  /* =========================
+     SOMBRAS
+  ========================= */
+
+  --shadow-small: 0 4px 12px rgba(39, 91, 126, 0.08);
+  --shadow-medium: 0 12px 30px rgba(39, 91, 126, 0.12);
+  --focus-shadow: 0 0 0 4px rgba(36, 180, 251, 0.18);
+
+
+  /* =========================
+     TRANSICIONES
+  ========================= */
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+}
