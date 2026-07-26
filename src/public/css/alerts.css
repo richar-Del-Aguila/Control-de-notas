@@ -120,7 +120,7 @@
 ========================================================== */
 
 .alert-danger{
-
+    
     background:var(--danger-soft);
 
     border-color:var(--danger-color);

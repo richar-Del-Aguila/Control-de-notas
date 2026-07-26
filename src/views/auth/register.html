@@ -15,81 +15,57 @@
 				<h2 class="card-title">Registro de usuarios</h2>
 				<p class="card-subtitle">Ingrese los siguientes datos para registrar un usuaio.</p>
 			</header>
+			<div id="alert-container" style="display: none;">
+				<div class="alert alert-danger">
+					Debes Completar todos los campos
+				</div>
+			</div>
 			<form class="form-field">
 				<div>
 					<label for="nombresUsuario" class="form-label">Nombres</label>
-					<input t
-					ype="text" 
-					class="form-input"
-					+id="nombresUsuario" 
-					name="username"
-					placeholder="Ingrese los nombres de usuario"
-					required>
+					<input t type="text" class="form-input" id="nombresUsuario" name="username"
+						placeholder="Ingrese los nombres de usuario" required>
 				</div>
 				<div>
 					<label for="apellidosUsuario" class="form-label">Apellidos</label>
-					<input type="text" 
-					name="userlastname" 
-					id="apellidosUsuario"
-					placeholder="Ingrese los apellidos del usuario" 
-					class="form-input" 
-					required>
+					<input type="text" name="userlastname" id="apellidosUsuario"
+						placeholder="Ingrese los apellidos del usuario" class="form-input" required>
 				</div>
 				<div>
 					<label for="usuarioIngresado" class="form-label">Usuario</label>
-					<input 
-					type="text" 
-					name="user" 
-					id="usuarioIngresado" required
-					placeholder="Se genera autimaticamente" 
-					class="form-input">
+					<input type="text" name="user" id="usuarioIngresado" required
+						placeholder="puedes generarlo autimaticamente" class="form-input">
+
 				</div>
-					<div>
-						<fieldset class="form-fieldset">
-							<legend class="form-legend">Rol de usuario</legend>
-							<div class="radio-input">
-								<label for="admin">
-									<input 
-									type="radio" 
-									name="rol" 
-									id="admin" 
-									value="administrador"
-									required>
-									Administrador</label>
-								<label for="profesor">
-									<input 
-									type="radio" 
-									name="rol" 
-									id="profesor" 
-									value="profesor"
-									required>
-									Profesor
-								</label>
-								<label for="alumno">
-									<input 
-									type="radio" 
-									name="rol" 
-									id="alumno" 
-									value="alumno"
-									required>
-									Alumno
-								</label>
-							</div>
-						</fieldset>
-					</div>
-					<div>
-						<label for="passwordIngresada" class="form-label">Contraseña</label>
-						<input type="password"
-						class="form-input"
-						name="password"
-						id="passwordIngresada">
-					</div>
-					<div class="form-actions">
-						<button 
-						type="submit"
-						class="btn btn-primary"
-						>Registrar</button>
-					</div>
+				<div>
+					<button type="button" id="btnGenerarUsuario" class="btn btn-secondary">Generar
+						automaticamente</button>
+				</div>
+				<div>
+					<fieldset class="form-fieldset">
+						<legend class="form-legend">Rol de usuario</legend>
+						<div class="radio-input">
+							<label for="admin">
+								<input type="radio" name="rol" id="admin" value="administrador" required>
+								Administrador</label>
+							<label for="profesor">
+								<input type="radio" name="rol" id="profesor" value="profesor" required>
+								Profesor
+							</label>
+							<label for="alumno">
+								<input type="radio" name="rol" id="alumno" value="alumno" required>
+								Alumno
+							</label>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<label for="passwordIngresada" class="form-label">Contraseña</label>
+					<input type="password" class="form-input" name="password" id="passwordIngresada">
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">Registrar</button>
+				</div>
 			</form>
 		</section>
 	</main>
