@@ -1,4 +1,4 @@
-CREATE TABLE usuarios (
+ CREATE TABLE usuarios (
     id_usuario SERIAL PRIMARY KEY,
 
     nombres_usuario VARCHAR(100) NOT NULL,
@@ -16,3 +16,4 @@ CREATE TABLE usuarios (
 
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
