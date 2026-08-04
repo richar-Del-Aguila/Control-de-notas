@@ -1,19 +1,4 @@
-/* ==========================================================
-   INICIO DEL ARCHIVO: dashboard-admin.css
-   ----------------------------------------------------------
-   En el proyecto real, este contenido irá en:
-
-   /public/css/pages/dashboard-admin.css
-
-   Y podrá conectarse con variables.css mediante:
-
-   @import url("../variables.css");
-========================================================== */
-
-
-/* ==========================================================
-   ESTRUCTURA GENERAL DEL DASHBOARD
-========================================================== */
+@import url("/Control-de-notas/src/public/css/variables.css");
 
 .dashboard-layout {
     display: grid;
@@ -687,8 +672,3 @@ main.dashboard-content {
     }
 
 }
-
-
-/* ==========================================================
-   FIN DEL ARCHIVO: dashboard-admin.css
-========================================================== */
