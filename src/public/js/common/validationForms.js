@@ -1,7 +1,17 @@
 export function habilitarBoton(inputs, boton) {
-  const todosLlenos = [...inputs].every(input => {
-    return input.value.trim() !== "";
+  const camposLlenos = [...inputs]
+    .filter(input => input.type !== "radio")
+    .every(input => input.value.trim() !== "");
+
+  const radios = [...inputs].filter(input => input.type === "radio");
+
+  const gruposRadio = [...new Set(radios.map(radio => radio.name))];
+
+  const radiosSeleccionados = gruposRadio.every(nombre => {
+    return document.querySelector(
+      `input[name="${nombre}"]:checked`
+    );
   });
 
-  boton.disabled = !todosLlenos;
+  boton.disabled = !(camposLlenos && radiosSeleccionados);
 }

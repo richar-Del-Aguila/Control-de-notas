@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de usuario</title>
+    <link rel="stylesheet" href="/Control-de-notas/src/public/css/components.css">
+</head>
+
+<body>
+    <main>
+        <section class="card">
+            <a href="/Control-de-notas/src/views/auth/login.html" class="btn btn-secondary">Regresar</a>
+
+            <header class="card-header" style="text-align: center;">
+                
+                <h2>Solicitud de usuario</h2>
+                <p>Ingresa los siguientes datos para solicitar su usuario</p>
+            </header>
+            <form action="" class="form-field">
+                <label for="nombresUsuario" class="form-label">Nombres</label>
+                <input type="text" placeholder="Ingresa tus nombres" class="form-input" id="nombresUsuario" name="names" required>
+
+                <label for="apellidosUsuario" class="form-label">Apellidos</label>
+                <input type="text" placeholder="Ingresa tus apellidos" class="form-input" id="apellidosUsuario" name="lastnames" required>
+
+                <label for="apellidosUsuario" class="form-label">Correo electronico</label>
+                <input type="email" placeholder="Ingresa tu correo personal" class="form-input" id="correoUsuario" name="email" required>
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Rol solicitado</legend>
+                    <div class="radio-input">
+                        <label for="admin">
+                            <input type="radio" name="rol" id="admin" value="administrador" required>
+                            Administrador</label>
+                        <label for="profesor">
+                            <input type="radio" name="rol" id="profesor" value="profesor" required>
+                            Profesor
+                        </label>
+                        <label for="alumno">
+                            <input type="radio" name="rol" id="alumno" value="alumno" required>
+                            Alumno
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button
+                    id="btnSolicitar" 
+                    class="btn btn-primary" 
+                    type="submit"
+                    disabled>Solicitar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="/Control-de-notas/src/public/js/requests/request-form.js"></script>
+</body>
+
+</html>
