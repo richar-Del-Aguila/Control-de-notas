@@ -61,8 +61,4 @@ La aplicación iniciará un servidor en `http://localhost:3000` y, además, inte
 - `src/config/database.js`: configuración de conexión a PostgreSQL.
 - `.env.example`: ejemplo de variables de entorno.
 
-## Notas
-
-- Asegúrate de no subir tu archivo `.env` al repositorio, ya que contiene credenciales de conexión.
-- Actualmente la aplicación solo inicia el servidor y muestra en consola los usuarios encontrados en la tabla `usuarios`.
 
