@@ -23,8 +23,10 @@ function VerificarRol() {
     rolElejido = "admin";
   } else if (radioAlumn.checked) {
     rolElejido = "alumn";
-  } else {
+  } else if (radioProfe.checked){
     rolElejido = "teacher";
+  } else{
+    rolElejido = "";
   }
   return rolElejido;
 }
@@ -34,6 +36,7 @@ const inputs = [
   inputApellidos,
   inputUsuario,
   inputContra,
+  inputEmail,
   radioAdmin,
   radioProfe,
   radioAlumn,
